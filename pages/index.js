@@ -14,6 +14,6 @@ const p = {
 }
 
 export default () =><div>
-  <h1>Next.js</h1>
-  <div>Welcom to next.js!</div>
+  <h1 style={h1}>Next.js</h1>
+  <p style={p}>Welcom to next.js!</p>
 </div>

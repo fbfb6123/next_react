@@ -3,7 +3,7 @@ const h1 = {
   fontWeight:'bold',
   textAlign:'right',
   letterSpacing:'-8px',
-  color:'f0f0f0',
+  color:'#f0f0f0',
   margin:'-40px 0px'
 }
 

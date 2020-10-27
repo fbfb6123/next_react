@@ -7,6 +7,12 @@ const h1 = {
   margin:'-40px 0px'
 }
 
+const p = {
+  margin:'0px',
+  color:'#666',
+  fontSize:'16pt'
+}
+
 export default () =><div>
   <h1>Next.js</h1>
   <div>Welcom to next.js!</div>

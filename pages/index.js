@@ -8,7 +8,7 @@ export default () =><div>
   <hr />
   <div>
     <Link href="/other">
-      <a>Go to Other page &gt;&gt;</a>
+      <button>Go to Other page &gt;&gt;</button>
     </Link>
   </div>
 </div>

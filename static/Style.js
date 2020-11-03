@@ -28,7 +28,7 @@ export default <style>{`
   h1 {
     font-size:22pt;
     font-weight:bold;
-    text-align:right;
+    text-align:left;
     letter-spacing:0px;
     color:#77a;
     margin:-50px 0px 50px 0px;

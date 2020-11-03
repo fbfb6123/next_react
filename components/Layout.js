@@ -9,10 +9,11 @@ class Layout extends Component {
     return (<div>
       {style}
       <Header header={this.props.header}
-      title={this.props.title} />
+        title={this.props.title} />
       {this.props.children}
       <Footer footer="copyright SYODA-Tuyano"/>
     </div>);
   }
+  
 }
 export default Layout;

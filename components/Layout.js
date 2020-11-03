@@ -12,7 +12,7 @@ class Layout extends Component {
         title={this.props.title} />
         {/* this.props.childrenがindex.jsから<Layout>コンテンツ内容</Layout>を取得して表示している */}
       {this.props.children}
-      <Footer footer="copyright SYODA-Tuyano"/>
+      <Footer footer={this.props.footer}/>
     </div>);
   }
 

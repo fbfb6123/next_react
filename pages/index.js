@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 
 //外部スタイルシート呼び出し
 export default () =>(
-  <Layout header="Next" title="Top page.">
+  <Layout header="Next" title="Top page." footer="フッター">
     <p>Welcome to next.jsa</p>
     <hr/>
     <Link href="./other"><button>

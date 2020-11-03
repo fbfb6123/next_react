@@ -1,6 +1,5 @@
 import Link from 'next/link';
-import style from '../static/Style';
-import Counter from '../components/Counter';
+import Layouts from '../components/Layout';
 
 //外部スタイルシート呼び出し
 export default () =><div>

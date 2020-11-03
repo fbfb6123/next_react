@@ -14,6 +14,17 @@ export default <style>{`
     color:#ddddff;
     margin:-32px 5px;
   }
+  footer {
+    color:#99c;
+    font-size:12pt;
+    text-align:right;
+    boeder-bottom:1px solid #99c;
+    margin:50px 0px 10px 0px;
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+  }
   h1 {
     font-size:68pt;
     font-weight:bold;

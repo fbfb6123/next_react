@@ -1,4 +1,4 @@
-//外部スタイルシートの利用
+import css from 'styled-jsx/css';
 
 export default <style>{`
   body {

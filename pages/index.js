@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Layout from '../components/Layout';
+import Image from '../static/Image';
 
 //外部スタイルシート呼び出し
 export default () =>(

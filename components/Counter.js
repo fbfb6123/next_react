@@ -10,16 +10,15 @@ export default class Counter extends Component {
   constructor(props){
     super(props);
     this.doAction = this.doAction.bind(this);
+    this.reset = this.reset.bind(this);
   }
 
-  doAction() {
-    this.setState((state)=> {
-      const num = state.counter + 1;
-      return ({
-        counter: num,
-        msg: "cointer: " + num
-      });
-    });
+  doAction(e) {
+    if (e.shiftKey){
+      return this.props.dispatch({ type:'DECREMENT' });
+    } else {
+      return this.props.dispatch({ type:'INCREMENT' });
+    }
   }
 
   render(){

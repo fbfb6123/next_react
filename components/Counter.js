@@ -3,17 +3,12 @@ import { connect } from 'react-redux';
 
 export default class Counter extends Component {
   msgStyle = {
-    fontSize:'16pt',
-    backgroundColor:"#eef",
-    padding:"5px"
+    fontSize:'12pt',
+    padding:"5px 15px"
   }
 
   constructor(props){
     super(props);
-    this.state = {
-      counter:0,
-      msg:'counter: 0',
-    };
     this.doAction = this.doAction.bind(this);
   }
 

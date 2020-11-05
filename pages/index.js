@@ -6,6 +6,7 @@ import Image from '../static/Image';
 export default () =>(
   <Layout header="Next" title="Top page." footer="フッター">
     <p>Welcome to next.jsa</p>
+    <Image fname="image.jpg" size="250"/>
     <hr/>
     <Link href="./other"><button>
       go to Other &gt;&gt;

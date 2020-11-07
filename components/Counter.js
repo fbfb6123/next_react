@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-export default class Counter extends Component {
-  msgStyle = {
+class Counter extends Component {
+  style = {
     fontSize:'12pt',
     padding:"5px 15px"
   }

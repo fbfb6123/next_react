@@ -4,7 +4,7 @@ import Counter from '../components/Counter';
 
 //外部スタイルシート呼び出し
 export default () =>(
-  <Layout header="Next" title="Top page." footer="フッター">
+  <Layout header="Next" title="Top page.">
     <Counter />
     <hr/>
     <Link href="./other"><button>

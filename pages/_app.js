@@ -8,9 +8,9 @@ class _App extends App {
     const {Component, pageProps, reduxStore} = this.props
     return (
       <Container>
-        <provider store={reduxStore}>
+        <Provider store={reduxStore}>
           <Component {...pageProps} />
-        </provider>
+        </Provider>
       </Container>
     )
   }

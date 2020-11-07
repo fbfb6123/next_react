@@ -4,7 +4,9 @@ import thunkMiddleware from 'redux-thunk';
 //ステート初期値
 const initial = {
   message:'START',
-  count: 0
+  data:[],
+  number:[],
+  result:0
 }
 
 //レデューサー

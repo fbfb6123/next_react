@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Layout from '../components/Layout';
-import Counter from '../components/Counter'
+import Counter from '../components/Counter';
 
 //外部スタイルシート呼び出し
 export default () =>(

@@ -39,7 +39,7 @@ export default <style>{`
     font-size:16pt;
   }
   hr{
-
+    margin:25px 0px;
   }
   tr{
 
@@ -48,6 +48,6 @@ export default <style>{`
 
   }
   td{
-    
+
   }
 `}</style>;

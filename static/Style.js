@@ -38,4 +38,16 @@ export default <style>{`
     color:#669;
     font-size:16pt;
   }
+  hr{
+
+  }
+  tr{
+
+  }
+  th{
+
+  }
+  td{
+    
+  }
 `}</style>;

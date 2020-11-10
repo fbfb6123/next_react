@@ -45,7 +45,11 @@ export default <style>{`
     margin:0px;
   }
   th{
-
+    font-size:14pt;
+    font-weight:left;
+    padding: 0px 20px;
+    margin:0px;
+    border-bottom:1px solid gray;
   }
   td{
 

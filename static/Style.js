@@ -52,6 +52,11 @@ export default <style>{`
     border-bottom:1px solid gray;
   }
   td{
-
+    font-size:14pt;
+    font-weight:plain;
+    text-align:right;
+    padding:0px 20px;
+    margin:0px;
+    border-bottom:1px solid gray;
   }
 `}</style>;

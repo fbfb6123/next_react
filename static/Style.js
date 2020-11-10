@@ -42,7 +42,7 @@ export default <style>{`
     margin:25px 0px;
   }
   tr{
-
+    margin:0px;
   }
   th{
 

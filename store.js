@@ -17,7 +17,7 @@ function counterReducer (state = initial, action) {
    let data2 = state.data.slice();
    let s = action.value;
    data2.unshift(s);
-   let num = s.replase(/[^0-9]/g,"");
+   let num = s.replace(/[^0-9]/g,"");
    let number2 = state.number.slice();
    number2.unshift(num);
    let result = (state.result * 1) + (num * 1);

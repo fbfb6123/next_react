@@ -1,5 +1,6 @@
 import { createStore, applyMiddleware } from 'redux';
 import thunkMiddleware from 'redux-thunk';
+import firebase from "firebase";
 
 //ステート初期値
 const initial = {

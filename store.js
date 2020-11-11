@@ -14,47 +14,33 @@ var firebaseConfig = {
   measurementId: "G-9VSHFMFXGZ"
 };
 
+var fireapp;
+try {
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+} catch (error) {
+  console.log(error.message);
+}
+export default fireapp;
+
 //ステート初期値
 const initial = {
-  message:'START',
-  data:[],
-  number:[],
-  result:0
 }
 
-//レデューサー
-function counterReducer (state = initial, action) {
+//レデューサー(ダミー)
+function fireReducer (state = initial, action) {
   switch (action.type) {
-    //計算実行
-   case 'ENTER' :
-   let data2 = state.data.slice();
-   let s = action.value;
-   data2.unshift(s);
-   let num = s.replace(/[^0-9]/g,"");
-   let number2 = state.number.slice();
-   number2.unshift(num);
-   let result = (state.result * 1) + (num * 1);
-   return {
-     message:'ENTER',
-     data:data2,
-     number:number2,
-     result:result
-   };
-   //リセット
-   case 'RESET':
-     return {
-       message:'RESET',
-       data:[],
-       number:[],
-       result:0
-     };
+    //ダミー
+   case 'TESTACTION' :
+   return state;
    //デフォルト
    default:
-     return state;  
-    }
+     return state;
   }
+}
+
 //initStore関数(redux-store.jsで必要)
 export function initStore(state = initial) {
-  return createStore(counterReducer, state,
+  return createStore(fireReducer, state,
     applyMiddleware(thunkMiddleware))
 }

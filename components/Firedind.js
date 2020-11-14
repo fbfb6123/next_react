@@ -8,5 +8,13 @@ class Firefind extends Component {
   }
 
   //初期化。ステートとイベント用メソッドの設定
-  
+  constructor(props) {
+    super(props);
+    this.state = {
+      input:'',
+      data:[]
+    }
+    this.doChange = this.doChange.bind(this);
+    this.doAction = this.doAction.bind(this);
+  }
 }

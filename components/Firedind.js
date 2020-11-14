@@ -44,5 +44,21 @@ class Firefind extends Component {
     });
   }
 
+  //テーブル内容の作成
+  getTableData(){
+    let result = [];
+    if (this.state.data == null || this.state.data.length == 0) {
+      return [<tr key="0"><th>NO DATA.</th></tr>];
+    }
+    for(let i in this.state.data) {
+      result.push(<tr key={i}>
+        <th>{this.state.data[i].ID}</th>
+        <th>{this.state.data[i].name}</th>
+        <th>{this.state.data[i].message}</th>
+      </tr>);
+    }
+    return result;
+  }
+
   
 }

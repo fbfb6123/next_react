@@ -60,5 +60,18 @@ class Firefind extends Component {
     return result;
   }
 
-  
+  //レンダリング
+  render() {
+    return (<div>
+      <input type="text" onChange={this.doChange}
+      style={this.style} value={this.state.input} />
+      <button onClick={this.doAction}>Find</button>
+      <hr />
+      <table><tbody>
+        {this.getTableData()}
+      </tbody></table>
+    </div>)
+  }
 }
+
+export default Firefind;

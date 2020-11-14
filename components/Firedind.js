@@ -29,5 +29,20 @@ class Firefind extends Component {
   doAction(e) {
     this.findFireData(this.state.input);
   }
+
+  //検索実行の処理
+  findFireData(s) {
+    let db = firebase.database();
+    let ref = db.ref('sample/');
+    let self = this;
+    ref.orderByKey()
+    .equalTo(s)
+    .on('value', (snapshot)=> {
+      self.setState({
+        data:snapshot.val()
+      });
+    });
+  }
+
   
 }

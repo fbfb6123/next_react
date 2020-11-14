@@ -17,4 +17,17 @@ class Firefind extends Component {
     this.doChange = this.doChange.bind(this);
     this.doAction = this.doAction.bind(this);
   }
+
+  //入力フィールドの処理
+  doChange(e) {
+    this.setState({
+      inpit:e.target.value
+    })
+  }
+
+  //ボタンクリック時の処理
+  doAction(e) {
+    this.findFireData(this.state.input);
+  }
+  
 }

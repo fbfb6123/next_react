@@ -21,7 +21,7 @@ class Firefind extends Component {
   //入力フィールドの処理
   doChange(e) {
     this.setState({
-      inpit:e.target.value
+      input:e.target.value
     })
   }
 

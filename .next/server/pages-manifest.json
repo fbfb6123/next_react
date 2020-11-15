@@ -3,5 +3,5 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/fire": "pages/fire.js",
-  "/fire_find": "pages/fire_find.js"
+  "/fire_add": "pages/fire_add.js"
 }

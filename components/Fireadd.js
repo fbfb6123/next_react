@@ -41,5 +41,23 @@ class Fireadd extends Component {
     Router.push('/fire');
   }
 
+  //最後のIDを取得
+  getLastID() {
+    let db = firebase.database();
+    let ref = db.ref('sample/');
+    let self = this;
+    ref.orderByKey()
+    .limitToLast(1)
+    .on('value', (snapshot)=>{
+      let res = snapshot.val();
+      for(let i in res){
+        self.setState({
+          lastID:i
+        });
+        return;
+      }
+    });
+  }
+
   
 }

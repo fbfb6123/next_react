@@ -59,5 +59,20 @@ class Fireadd extends Component {
     });
   }
 
+  //データを追加する
+  addFireData(){
+    if (this.state.lastID == -1){
+      return;
+    }
+    let id = this.state.lastID * 1+1;
+    let db = firebase.database();
+    let ref = db:ref('sample/' + id);
+    ref.set({
+      ID:id,
+      message: this.state.msg_str,
+      name:this.state.name_str
+    });
+  }
+
   
 }

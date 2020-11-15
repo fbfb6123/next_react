@@ -66,7 +66,7 @@ class Fireadd extends Component {
     }
     let id = this.state.lastID * 1+1;
     let db = firebase.database();
-    let ref = db:ref('sample/' + id);
+    let ref = db.ref('sample/' + id);
     ref.set({
       ID:id,
       message: this.state.msg_str,
@@ -74,5 +74,39 @@ class Fireadd extends Component {
     });
   }
 
-  
+  //レンダリング
+  render(){
+    if (this.state.lastID == -1){
+      this.getLastID();
+    }
+    return (<div>
+      {(this.state.lastID == -1)
+      ?
+      <p>please wait...</p>
+      :
+      <table>
+      <tbody>
+        <tr>
+          <th className="label">name</th>
+          <td><input type="text" placeholder="your name."
+          onChange={this.doChangeName}
+          value={this.state.name_str} /></td>
+        </tr>
+        <tr>
+          <th className="label">message</th>
+          <td><input type="text" size="40"
+          placeholder="type message..."
+          onChange={this.doChangeMsg}
+          value={this.state.msg_str} /></td>
+        </tr>
+        <tr><th></th><td>
+        <button onClick={this.doAction}>Add</button>
+        </td></tr>
+      </tbody>
+      </table>
+  }
+    </div>)
+  }
 }
+
+export default Fireadd;

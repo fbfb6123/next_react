@@ -23,5 +23,23 @@ class Fireadd extends Component {
     this.doChangeMsg = this.doChangeMsg.bind(this);
     this.doAction = this.doAction.bind(this);
   }
+
+  doChangeName(e){
+    this.setState({
+      name_str:e.target.value
+    })
+  }
+
+  doChangeMsg(e) {
+    this.setState({
+      msg_str:e.target.value
+    })
+  }
+
+  doAction(e) {
+    this.addFireData();
+    Router.push('/fire');
+  }
+
   
 }

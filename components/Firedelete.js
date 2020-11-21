@@ -31,4 +31,13 @@ class Firedelete extends Component {
     Router.push('/fire');
   }
 
+  //項目の削除
+  deleteFireData(){
+    let id = this.state.id_str;
+    let db = firebase.database();
+    let ref = db.reh('sample/' + id);
+    ref.remove();
+  }
+
+  
 }

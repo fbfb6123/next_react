@@ -39,5 +39,24 @@ class Firedelete extends Component {
     ref.remove();
   }
 
-  
+  //レンダリング
+  render(){
+    return (<div>
+      <table>
+        <tobody>
+          <tr>
+            <th className="label">ID:</th>
+            <td><input type="text" placehplder="delete ID:"
+            onChange={this.doChange}
+            value={this.state.id_str} /></td>
+          </tr>
+          <tr><th></th><td>
+          <button onClick={this.doAction}>Delete</button>
+          </td></tr>
+        </tobody>
+      </table>
+    </div>)
+  }
 }
+
+export default Firedelete;

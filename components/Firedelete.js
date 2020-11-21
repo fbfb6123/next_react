@@ -18,5 +18,17 @@ class Firedelete extends Component {
     this.doChange = this.doChange.bind(this);
     this.doAction = this. doAction.bind(this);
   }
-  
+
+
+  doChange(e){
+    this.setState({
+      id_str:e.target.value
+    })
+  }
+
+  doAction(e) {
+    this.deleteFireDate();
+    Router.push('/fire');
+  }
+
 }

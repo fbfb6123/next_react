@@ -9,5 +9,14 @@ class Firedelete extends Component {
     padding:"5px 10px"
   }
 
+  //初期化処理
+  constructor(props) {
+    super(props);
+    this.state={
+      id_str:'',
+    }
+    this.doChange = this.doChange.bind(this);
+    this.doAction = this. doAction.bind(this);
+  }
   
 }

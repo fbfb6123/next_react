@@ -16,7 +16,7 @@ class Firedelete extends Component {
       id_str:'',
     }
     this.doChange = this.doChange.bind(this);
-    this.doAction = this. doAction.bind(this);
+    this.doAction = this.doAction.bind(this);
   }
 
 
@@ -27,7 +27,7 @@ class Firedelete extends Component {
   }
 
   doAction(e) {
-    this.deleteFireDate();
+    this.deleteFireData();
     Router.push('/fire');
   }
 
@@ -35,7 +35,7 @@ class Firedelete extends Component {
   deleteFireData(){
     let id = this.state.id_str;
     let db = firebase.database();
-    let ref = db.reh('sample/' + id);
+    let ref = db.ref('sample/' + id);
     ref.remove();
   }
 
